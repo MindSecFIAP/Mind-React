@@ -1,0 +1,239 @@
+/* Global ====================== */
+:root {
+    --dark-gray: #353535;
+    --light-gray: #cecece;
+    --light-light-gray: #E5E5E5;
+    --ligh-blue: #8ecae6;
+    --blue: #219ebc;
+    --dark-blue: #023047;
+    --dark-yellow: #ffb703;
+    --light-yellow: #fde74c;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    overflow: hidden;
+}
+
+/* Logo e Section ============= */
+
+.center{    
+    height: 100vh;
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+
+    margin: -2rem 0;
+
+    z-index: 999;
+}
+
+.logoMind{
+    width:50vw;
+}
+
+/* [FORMS] Inputs & Buttons ====================== */
+
+.frmLogin{
+    text-align: center;
+}
+
+.frmLogin input[type="text"], .frmLogin input[type="password"]{
+    display: block;
+    width: 50vw;
+    margin-top: 2vh;
+    padding: .8rem 1.2rem;
+    text-indent: .8rem;
+
+    border: .2rem solid var(--blue);
+    border-radius: 1.8rem;
+
+    background-color: var(--light-gray);
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+
+}
+
+.frmLogin input[type="text"]::placeholder, .frmLogin input[type="password"]::placeholder{
+    color: var(--dark-gray);
+}
+
+.frmLogin input.txtbox:focus {
+    outline-width: 0;
+    border-color: var(--dark-yellow);
+}
+
+.btn{
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    padding: .8rem 1.2rem;
+    width: 20vw;
+    margin-top: 2vh;
+
+    border: .2rem solid var(--blue);
+    border-radius: 1.8rem;
+
+    background-color: var(--blue);
+    border-color: var(--light-gray);
+    color: var(--light-gray);
+
+    transition-duration: 0.5s;
+    cursor: pointer;
+
+}
+
+.darkbtn{
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    padding: .8rem 1.2rem;
+    width: 20vw;
+    margin-top: 2vh;
+
+    border: .2rem solid var(--blue);
+    border-radius: 1.8rem;
+
+    background-color: var(--dark-blue);
+    border-color: var(--light-gray);
+    color: var(--light-gray);
+
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.darkbtn:hover{
+    background-color: #219ebc;
+    color: var(--dark-gray);    
+}
+
+a.btn{
+    display: block;
+}
+
+.btn:focus {
+    outline-width: 0;
+    background-color: var(--dark-yellow);
+    color: var(--dark-gray);
+}
+
+.btn:active{
+    transform: translateY(2px);
+}
+
+.btn:hover{
+    background-color: var(--dark-yellow);
+    color: var(--dark-gray);    
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+
+    justify-content: space-between;
+}
+
+/* Modal ====================== */
+.modal-overlay, .modal-voluntary{
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 999;
+}
+
+.modal-overlay.active, .modal-voluntary.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal{
+    background-color: var(--light-light-gray);
+    padding: 2.4rem;
+    border-radius: 0.5rem;
+    max-width: 90vw;
+
+    position: relative;
+    z-index: 1;
+}
+
+.modal i{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    color: var(--dark-gray);
+    opacity: 0.7;
+}
+
+.modal i:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.modal a, .modal p{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.modal img{
+    width: 40vw;
+    height: 50vh;
+}
+
+/*  Responsive =================================== */
+
+@media only screen and (max-width: 600px) {
+    .btn{
+        width: 85vw;
+    }   
+    html{
+        font-size: 50%;
+    }
+    div.wrap{
+        justify-content: center;
+    }
+    .frmLogin input[type="text"], .frmLogin input[type="password"] {
+        width: 85vw;
+    }
+    section{
+        width: 85vw;
+    }
+    .logoMind{
+        width: 85vw;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .btn{
+        font-size: 0.8rem;
+    }   
+    .frmLogin input[type="text"], .frmLogin input[type="password"] {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media only screen and (max-height: 600px) {
+    .center{
+        margin: 3rem 0;
+        overflow-y: auto;
+    }
+}
