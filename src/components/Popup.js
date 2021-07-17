@@ -7,10 +7,11 @@ export function Popup(props) {
   return props.trigger ? (
     <>
       <div className="modal-overlay">
-        <div className="modal">
+        <div className="modal-popup">
           <div>
             <button onClick={() => props.setTrigger(false)}>
-              <FontAwesomeIcon className="icon" icon={faTimesCircle} />
+
+              <FontAwesomeIcon className="iconClose" icon={faTimesCircle} />
             </button>
 
             {props.children}

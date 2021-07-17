@@ -137,6 +137,23 @@ a.btn{
     justify-content: space-between;
 }
 
+.modal-popup a, .modal-popup p{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.modal-popup a, .modal-popup p{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.popup-choice{
+    width: 40vw;
+    height: 50vh;
+}
+
 
 /*  Responsive =================================== */
 

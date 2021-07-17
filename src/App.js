@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import {Login} from "./pages/Login";
-import {Register} from "./pages/Register";
+import {RegisterUser} from "./pages/RegisterUser";
 
 import "./App.css";
 
@@ -11,7 +11,7 @@ function App() {
  
     <BrowserRouter>
         <Switch>
-          <Route path="/register" exact component={Register} />
+          <Route path="/registerUser" exact component={RegisterUser} />
           <Route path="/" component={Login} />
         </Switch>
     </BrowserRouter>
