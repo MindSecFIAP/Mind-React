@@ -79,15 +79,15 @@ export function Login() {
         setTrigger={() => setButtonPopupVoluntary(false)}
       >
         <h2>Escolha o tipo de usuário</h2>
-        <img src={EscolhaDark} alt="Avatar" />
+        <img className="popup-choice" src={EscolhaDark} alt="Avatar" />
 
         <div>
-          <a href="./Formado" class="darkbtn btn">
+          <a href="./RegisterFormado" class="darkbtn btn">
             Formado
           </a>
         </div>
         <div>
-          <a href="./Estagiario" class="darkbtn btn">
+          <a href="./RegisterEstagiario" class="darkbtn btn">
             Estagiário
           </a>
         </div>
