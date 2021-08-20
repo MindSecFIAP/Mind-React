@@ -8,6 +8,7 @@ export function Header(props){
             <header>
                 <div className="wrap">
                     <a href={props.return}> <img className="logo" src={Logo} alt="Logo MindSec"/> </a>
+                    {props.img}
                 </div>
             </header>
         </>

@@ -1,3 +1,489 @@
-h1{
-    background-color:white
+:root {
+    --light-gray: #cecece;
+    --light-light-gray: #E5E5E5;
+    --light-blue: #8ecae6;
+    --blue: #219ebc;
+    --dark-blue: #023047;
+    --dark-yellow: #ffb703;
+    --light-yellow: #fde74c;
+}
+
+html {
+    overflow: hidden;
+}
+
+*::placeholder {
+    opacity: 0.7
+}
+
+/* Header ====================== */
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+.logo {
+    height: 3rem;
+    padding: .5rem;
+}
+
+div.wrap {
+    background-color: var(--dark-blue);
+}
+
+.wrap {
+    position: absolute;
+
+    width: 100vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-btn {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    color: var(--light-gray)
+}
+
+/* Main Div ===================== */
+.main {
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+hr {
+    width: 0.3vw;
+    height: 75vh;
+
+    margin: 0 2rem;
+    background-color: var(--light-gray);
+    border-radius: 10rem;
+}
+
+/* Profile Pic ====================== */
+
+img.avatar {
+    width: 25vw;
+    min-width: 175px;
+}
+
+.icon {
+    font-size: 6rem;
+
+    color: var(--light-blue);
+    transition: 0.5s;
+}
+
+.icon:last-child{
+
+    margin:1rem -4rem;
+
+    font-size:3rem;
+
+    color: var(--dark-blue);
+
+    opacity:1;
+}
+
+.btnSearch {
+    position: relative;
+    margin-left: -5vw;
+    opacity: 0.8;
+}
+
+.btnSearch:hover {
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btnSearch:hover .light {
+    color: var(--light-yellow);
+}
+
+
+/* [FORMS] Inputs & Buttons ====================== */
+
+.campos {
+    text-align: center;
+}
+
+.campos input {
+    display: block;
+    width: 50vw;
+    height: 5vh;
+    margin-top: 2vh;
+    padding: .8rem 1.2rem;
+    text-indent: .8rem;
+
+    border: .2rem solid var(--blue);
+    border-radius: 1.8rem;
+
+    background-color: var(--light-gray);
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+
+}
+
+.campos input::placeholder {
+    color: var(--dark-gray);
+}
+
+.campos input:focus {
+    outline-width: 0;
+    border-color: var(--dark-yellow);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Select Tag ====================== */
+#types {
+    width: 50vw;
+    margin-top: 2vh;
+    height: 5vh;
+
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    padding: .6rem 1rem;
+
+    border: .2rem solid var(--blue);
+    border-radius: 1.8rem;
+    background-color: var(--light-gray);
+    text-indent: .8rem;
+}
+
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+}
+
+/* For IE10 */
+select::-ms-expand {
+    display: none;
+}
+
+/* Button ====================== */
+
+.btn {
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    padding: .8rem 1.2rem;
+    width: 20vw;
+    margin-top: 2vh;
+
+    border: .2rem solid #219ebc;
+    border-radius: 1.8rem;
+
+    background-color: #219ebc;
+    border-color: #cecece;
+    color: #cecece;
+
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+a.btn {
+    display: block;
+}
+
+.btn:focus {
+    outline-width: 0;
+    background-color: var(--dark-yellow);
+    color: var(--dark-gray);
+}
+
+.btn:active {
+    transform: translateY(2px);
+}
+
+.btn:hover {
+    background-color: var(--dark-yellow);
+    color: var(--dark-gray);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+/* Radio ====================== */
+
+main .space {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .choose input[type=radio]+label {
+    width: 20vw;
+    height: 5vh;
+    text-align: center;
+    padding: 1.85vh 2.2rem;
+}
+
+main input[type=radio] {
+    display: none;
+}
+
+main input[type=radio] + label {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1.3vh 2.2rem;
+
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+
+    background-color: #cecece;
+
+    border-radius: 2rem;
+    border-color: #219ebc;
+
+    transition: 0.5s;
+
+}
+
+main input[type=radio]:hover+label {
+    background-color: var(--light-yellow);
+    cursor: pointer;
+}
+
+main input[type=radio]:checked+label {
+    background-image: none;
+    background-color: #219ebc;
+
+    border-color: #cecece;
+    color: #cecece;
+    font-weight: 600;
+}
+
+main .radio input[type=radio],
+main .radio label {
+    width: 15vw;
+    height: 5vh;
+}
+
+main .time input,
+main .time label {
+    font-size: 2rem;
+
+    text-align: center;
+
+    width: 15vw;
+    height: 5vh;
+}
+
+/* Modal ====================== */
+
+.modal {
+    background-color: var(--light-light-gray);
+    padding: 2.4rem;
+    border-radius: 0.5rem;
+    max-width: 90vw;
+    min-height: 400px;
+    user-select: none;
+    position: relative;
+    z-index: 1;
+}
+
+.modal i {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    color: var(--dark-gray);
+    opacity: 0.7;
+}
+
+.modal i:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.modal a,
+.modal p {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#selectAvatar{
+    margin-top: 7rem;
+    width: 100%;
+}
+
+/* Slider/Carousel ================= */
+
+#slider [type=radio] {
+    display: none;
+}
+
+#slider h1{
+    font-family: 'Montserrat';
+}
+
+#slider {
+    margin-top: 2rem;
+    height: 15vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#slider label {
+    margin: auto;
+    border-radius: 20rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+#s1:checked~#slide4,
+#s2:checked~#slide5,
+#s3:checked~#slide1,
+#s4:checked~#slide2,
+#s5:checked~#slide3 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(-30%, 0, -200px);
+}
+
+#s1:checked~#slide5,
+#s2:checked~#slide1,
+#s3:checked~#slide2,
+#s4:checked~#slide3,
+#s5:checked~#slide4 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(-15%, 0, -100px);
+}
+
+#s1:checked~#slide1,
+#s2:checked~#slide2,
+#s3:checked~#slide3,
+#s4:checked~#slide4,
+#s5:checked~#slide5 {
+    box-shadow: 0 13px 25px 0 rgba(0, 0, 0, .3), 0 11px 7px 0 rgba(0, 0, 0, .19);
+    transform: translate3d(0, 0, 0);
+}
+
+#s1:checked~#slide2,
+#s2:checked~#slide3,
+#s3:checked~#slide4,
+#s4:checked~#slide5,
+#s5:checked~#slide1 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(15%, 0, -100px);
+}
+
+#s1:checked~#slide3,
+#s2:checked~#slide4,
+#s3:checked~#slide5,
+#s4:checked~#slide1,
+#s5:checked~#slide2 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(30%, 0, -200px);
+}
+
+/* Media Queries ===================== */
+
+@media only screen and (max-width: 1660px) {
+    main input[type=radio]+label {
+        height: max-content;
+    }
+
+    #types {
+        height: max-content;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .campos input {
+        width: 80vw;
+    }
+
+    .campos {
+        margin-top: 5rem;
+    }
+
+    .column {
+        flex-direction: column;
+    }
+
+    main input[type=radio]+label {
+        width: 80vw;
+    }
+
+    html {
+        overflow: scroll;
+    }
+
+    #types {
+        width: 80vw;
+    }
+    .btn{
+        width: 40vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .btnSearch{
+        font-size: 1.5rem;
+    }
+    .main{
+        padding: 6rem 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    section input[type=radio]+label, .campos input{
+        font-size: 0.9rem;
+        text-indent: 0rem;
+    }
+    .btn{
+        width: 80vw;
+        font-size: 1rem;
+    }
+    .btnSearch{
+        margin-left: -10vw;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    div.wrap{
+        flex-direction: column;
+    }
+    .profilePic{
+        margin-top: 2.5rem;
+    }
 }
