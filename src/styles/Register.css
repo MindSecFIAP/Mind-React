@@ -1,12 +1,4 @@
-:root {
-    --light-gray: #cecece;
-    --light-light-gray: #E5E5E5;
-    --light-blue: #8ecae6;
-    --blue: #219ebc;
-    --dark-blue: #023047;
-    --dark-yellow: #ffb703;
-    --light-yellow: #fde74c;
-}
+
 
 html {
     overflow: hidden;

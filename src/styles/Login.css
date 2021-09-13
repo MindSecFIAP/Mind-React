@@ -1,14 +1,6 @@
 /* Global ====================== */
-:root {
-    --dark-gray: #353535;
-    --light-gray: #cecece;
-    --light-light-gray: #E5E5E5;
-    --ligh-blue: #8ecae6;
-    --blue: #219ebc;
-    --dark-blue: #023047;
-    --dark-yellow: #ffb703;
-    --light-yellow: #fde74c;
-}
+
+
 
 a{
     text-decoration: none;
