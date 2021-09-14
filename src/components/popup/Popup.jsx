@@ -1,4 +1,4 @@
-import "../styles/Popup.css";
+import "./Popup.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";

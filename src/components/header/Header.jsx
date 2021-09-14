@@ -1,5 +1,5 @@
-import Logo from "../assets/img/MindSec.svg"
-import "../styles/Header.css"
+import Logo from "../../assets/img/MindSec.svg"
+import "./Header.css"
 
 export function Header(props){
 

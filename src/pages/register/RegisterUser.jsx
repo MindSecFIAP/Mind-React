@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import { Header } from "../../components/Header";
-import { Popup } from "../../components/Popup";
+import { Header } from "../../components/header/Header";
+import { Popup } from "../../components/popup/Popup";
 
 import "../../styles/Register.css";
 

@@ -1,13 +1,13 @@
-import { Header } from "../components/Header";
-import { Popup } from "../components/Popup";
+import { Header } from "../../components/header/Header";
+import { Popup } from "../../components/popup/Popup";
 
 import { useState } from "react";
 
-import Mind from "../assets/img/Mind.svg";
-import Escolha from "../assets/img/SVG/escolha.svg";
-import EscolhaDark from "../assets/img/SVG/escolhaDark.svg";
+import Mind from "../../assets/img/Mind.svg";
+import Escolha from "../../assets/img/SVG/escolha.svg";
+import EscolhaDark from "../../assets/img/SVG/escolhaDark.svg";
 
-import "../styles/Login.css";
+import "../../styles/Login.css";
 
 export function Login() {
   const [buttonPopup, setButtonPopup] = useState(false);

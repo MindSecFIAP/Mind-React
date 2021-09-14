@@ -1,4 +1,4 @@
-import { RegisterUser } from "../register/RegisterUser"
+import { RegisterUser } from "./RegisterUser"
 
 export function RegisterEstagiario(props) {
   return (
