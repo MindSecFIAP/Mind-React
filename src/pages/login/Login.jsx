@@ -8,6 +8,7 @@ import Escolha from "../../assets/img/SVG/escolha.svg";
 import EscolhaDark from "../../assets/img/SVG/escolhaDark.svg";
 
 import "../../styles/Login.css";
+import {Botoes, Entrar} from "../../styled"
 
 export function Login() {
   const [buttonPopup, setButtonPopup] = useState(false);
@@ -24,14 +25,14 @@ export function Login() {
           title="Logo da Mind"
         />
         <form id="login-form" className="frmLogin">
-          <input
+          <Entrar
             name="username"
             type="text"
             id="txtLogin"
             className="txtbox"
             placeholder="Email / Celular"
           />
-          <input
+          <Entrar
             name="password"
             type="password"
             id="txtPassword"
@@ -41,18 +42,18 @@ export function Login() {
 
           <div className="buttons">
             <div className="boxRegister">
-              <a className="btn" href="#" onClick={() => setButtonPopup(true)}>
+              <Botoes className="btn" href="#" onClick={() => setButtonPopup(true)}>
                 Cadastrar
-              </a>
+              </Botoes>
             </div>
 
             <div className="boxLogin">
-              <input
+              <Botoes
                 type="button"
                 className="btn"
                 onclick="check(this.form)"
                 value="Login"
-              />
+              >Login</Botoes>
             </div>
           </div>
         </form>
@@ -63,14 +64,14 @@ export function Login() {
         <img className="popup-choice" src={Escolha} alt="Avatar" />
 
         <div>
-          <a class="btn" onClick={() => setButtonPopupVoluntary(true)}>
+          <Botoes class="btn" onClick={() => setButtonPopupVoluntary(true)}>
             Voluntário
-          </a>
+          </Botoes>
         </div>
         <div>
-          <a href="./RegisterUser" id="btnUser" class="btn">
+          <Botoes href="./RegisterUser" id="btnUser" class="btn">
             Usuário
-          </a>
+          </Botoes>
         </div>
       </Popup>
 
@@ -82,14 +83,14 @@ export function Login() {
         <img className="popup-choice" src={EscolhaDark} alt="Avatar" />
 
         <div>
-          <a href="./RegisterFormado" class="darkbtn btn">
+          <Botoes href="./RegisterFormado" class="darkbtn btn">
             Formado
-          </a>
+          </Botoes>
         </div>
         <div>
-          <a href="./RegisterEstagiario" class="darkbtn btn">
+          <Botoes href="./RegisterEstagiario" class="darkbtn btn">
             Estagiário
-          </a>
+          </Botoes>
         </div>
       </Popup>
     </>

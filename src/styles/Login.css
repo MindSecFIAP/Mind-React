@@ -35,50 +35,6 @@ html{
     text-align: center;
 }
 
-.frmLogin input[type="text"], .frmLogin input[type="password"]{
-    display: block;
-    width: 50vw;
-    margin-top: 2vh;
-    padding: .8rem 1.2rem;
-    text-indent: .8rem;
-
-    border: .2rem solid var(--blue);
-    border-radius: 1.8rem;
-
-    background-color: var(--light-gray);
-    font-family: 'Montserrat';
-    font-size: 1.2rem;
-
-}
-
-.frmLogin input[type="text"]::placeholder, .frmLogin input[type="password"]::placeholder{
-    color: var(--dark-gray);
-}
-
-.frmLogin input.txtbox:focus {
-    outline-width: 0;
-    border-color: var(--dark-yellow);
-}
-
-.btn{
-    font-family: 'Montserrat';
-    font-size: 1.2rem;
-    padding: .8rem 1.2rem;
-    width: 20vw;
-    margin-top: 2vh;
-
-    border: .2rem solid var(--blue);
-    border-radius: 1.8rem;
-
-    background-color: var(--blue);
-    border-color: var(--light-gray);
-    color: var(--light-gray);
-
-    transition-duration: 0.5s;
-    cursor: pointer;
-
-}
-
 .darkbtn{
     font-family: 'Montserrat';
     font-size: 1.2rem;
@@ -99,25 +55,6 @@ html{
 
 .darkbtn:hover{
     background-color: #219ebc;
-    color: var(--dark-gray);    
-}
-
-a.btn{
-    display: block;
-}
-
-.btn:focus {
-    outline-width: 0;
-    background-color: var(--dark-yellow);
-    color: var(--dark-gray);
-}
-
-.btn:active{
-    transform: translateY(2px);
-}
-
-.btn:hover{
-    background-color: var(--dark-yellow);
     color: var(--dark-gray);    
 }
 
