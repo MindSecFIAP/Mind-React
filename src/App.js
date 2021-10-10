@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 
 import {Login} from "./pages/login/Login";
 import {RegisterUser} from "./pages/register/RegisterUser";
@@ -13,7 +13,6 @@ import "./App.css";
 function App() {
   return (
     <>
-    <BrowserRouter>
         <Switch>
           <Route path="/chatBot" exact component={ChatBot} />
           <Route path="/chatVoluntario" exact component={ChatVoluntario} />
@@ -23,7 +22,6 @@ function App() {
           <Route path="/registerFormado" exact component={RegisterFormado} />
           <Route path="/" component={Login} />
         </Switch>
-    </BrowserRouter>
     </>
   );
 }
