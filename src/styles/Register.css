@@ -107,32 +107,6 @@ img.avatar {
     text-align: center;
 }
 
-.campos input {
-    display: block;
-    width: 50vw;
-    height: 5vh;
-    margin-top: 2vh;
-    padding: .8rem 1.2rem;
-    text-indent: .8rem;
-
-    border: .2rem solid var(--blue);
-    border-radius: 1.8rem;
-
-    background-color: var(--light-gray);
-    font-family: 'Montserrat';
-    font-size: 1.2rem;
-
-}
-
-.campos input::placeholder {
-    color: var(--dark-gray);
-}
-
-.campos input:focus {
-    outline-width: 0;
-    border-color: var(--dark-yellow);
-}
-
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

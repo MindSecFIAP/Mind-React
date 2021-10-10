@@ -3,6 +3,8 @@ import "./Popup.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 
+import {FaTimesCircle} from 'react-icons/fa'
+
 export function Popup(props) {
   return props.trigger ? (
     <>
@@ -10,8 +12,7 @@ export function Popup(props) {
         <div className="modal-popup">
           <div>
             <button onClick={() => props.setTrigger(false)}>
-
-              <FontAwesomeIcon className="iconClose" icon={faTimesCircle} />
+              <FaTimesCircle className="iconClose"/>
             </button>
 
             {props.children}

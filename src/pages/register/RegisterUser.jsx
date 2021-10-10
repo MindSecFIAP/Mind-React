@@ -4,6 +4,7 @@ import { Header } from "../../components/header/Header";
 import { Popup } from "../../components/popup/Popup";
 
 import "../../styles/Register.css";
+import {Cadastrar} from "../../styled"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquare, faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -39,13 +40,13 @@ export function RegisterUser(props) {
         <main className="section">
           <form>
             <div className="campos">
-              <input name="name" type="text" placeholder="Nome" />
+              <Cadastrar name="name" type="text" placeholder="Nome" />
               {props.crp}
               {props.instituicao}
               {props.cpf}
-              <input name="cell" type="number" placeholder="Telefone" />         
-              <input name="email" type="email" placeholder="E-mail" />
-              <input
+              <Cadastrar name="cell" type="number" placeholder="Telefone" />         
+              <Cadastrar name="email" type="email" placeholder="E-mail" />
+              <Cadastrar
                 type="date"
                 placeholder="Data de Nascimento"
                 onfocus="(this.type='date')"
@@ -53,7 +54,7 @@ export function RegisterUser(props) {
               />
 
               <div className="column space radio">
-                <input
+                <Cadastrar
                   className="radioHidden"
                   type="radio"
                   name="gender"
@@ -62,7 +63,7 @@ export function RegisterUser(props) {
                 />
                 <label for="male">Masculino</label>
 
-                <input
+                <Cadastrar
                   className="radioHidden"
                   type="radio"
                   name="gender"
@@ -71,7 +72,7 @@ export function RegisterUser(props) {
                 />
                 <label for="female">Feminino</label>
 
-                <input
+                <Cadastrar
                   className="radioHidden"
                   type="radio"
                   name="gender"
@@ -86,7 +87,7 @@ export function RegisterUser(props) {
 
                 {props.terapeutica}
 
-              <input name="passwd" type="password" placeholder="Senha" />
+              <Cadastrar name="passwd" type="password" placeholder="Senha" />
 
               <button className="submit btn" type="submit">
                 CONFIRMAR
