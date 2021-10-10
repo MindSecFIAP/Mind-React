@@ -8,7 +8,7 @@ import Escolha from "../../assets/img/SVG/escolha.svg";
 import EscolhaDark from "../../assets/img/SVG/escolhaDark.svg";
 
 import "../../styles/Login.css";
-import {Botoes, Entrar} from "../../styled"
+import {Botoes, Entrar} from "../../styles"
 
 export function Login() {
   const [buttonPopup, setButtonPopup] = useState(false);
