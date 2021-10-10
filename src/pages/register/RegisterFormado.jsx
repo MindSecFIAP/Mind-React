@@ -1,22 +1,24 @@
 import { RegisterUser } from "./RegisterUser";
 
+import {Cadastrar} from "../../styled"
+
 export function RegisterFormado() {
   return (
     <>
       <RegisterUser
-        crp={<input name="CRP" type="number" placeholder="CRP" />}
+        crp={<Cadastrar name="CRP" type="number" placeholder="CRP" />}
         cpf={
-          <input name="CPF" type="number" placeholder="CPF (Somente números)" />
+          <Cadastrar name="CPF" type="number" placeholder="CPF (Somente números)" />
         }
         time={
           <div class="column space time">
-            <input type="radio" name="time" id="thirty" value="30" />
+            <Cadastrar type="radio" name="time" id="thirty" value="30" />
             <label for="thirty">Conversa de 30min</label>
 
-            <input type="radio" name="time" id="fourtyfive" value="45" />
+            <Cadastrar type="radio" name="time" id="fourtyfive" value="45" />
             <label for="fourtyfive">Conversa de 45min</label>
 
-            <input type="radio" name="time" id="sixty" value="60" />
+            <Cadastrar type="radio" name="time" id="sixty" value="60" />
             <label for="sixty">Conversa de 60min</label>
           </div>
         }

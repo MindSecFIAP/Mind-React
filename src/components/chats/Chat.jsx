@@ -1,13 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAngleRight,
-  faClock,
-  faComment,
-  faFlag,
-  faMicrophone,
-  faPaperPlane,
-  faStar,
-} from "@fortawesome/free-solid-svg-icons";
+
+import {IoIosArrowForward} from 'react-icons/io'
+import {FaFlag,FaMicrophone,FaPaperPlane,FaStar,FaClock,FaComment} from 'react-icons/fa'
 import "../../styles/Chat.css";
 import { useState } from "react/cjs/react.development";
 
@@ -31,11 +24,7 @@ export function Chat(props) {
           <div className="title" onclick="">
             <div id="idProfile" className="profile">
               <div>
-                <FontAwesomeIcon
-                  id="arrow"
-                  icon={faAngleRight}
-                  onClick={props.seta}
-                />
+                <IoIosArrowForward onClick={props.seta} id="arrow"/>
               </div>
               <div
                 className="profilePicName"
@@ -46,12 +35,7 @@ export function Chat(props) {
               </div>
             </div>
             <div onclick="ModalBetray.open()">
-              <i className="fas fa-flag fa-2x"></i>
-              <FontAwesomeIcon
-                icon={faFlag}
-                className="flag"
-                onClick={() => setBetray(true)}
-              />
+              <FaFlag onClick={() => setBetray(true)} className="flag"/>
             </div>
           </div>
           <div className="current">
@@ -134,8 +118,8 @@ export function Chat(props) {
               placeholder="Digite sua mensagem"
               className="campo"
             />
-            <FontAwesomeIcon icon={faPaperPlane} className="send" />
-            <FontAwesomeIcon icon={faMicrophone} className="send" />
+            <FaPaperPlane className="send"/>
+            <FaMicrophone className="send"/>
           </div>
         </main>
       </div>
@@ -146,7 +130,7 @@ export function Chat(props) {
             <div className="form">
               <div>
                 <span>
-                  <FontAwesomeIcon icon={faFlag} />
+                  <FaFlag/>
                 </span>
                 <h2>Nos diga abaixo a sua denúncia</h2>
               </div>
@@ -174,15 +158,15 @@ export function Chat(props) {
             <div className="all_stats">
               <h1>Carina</h1>
               <div className="stats rating">
-                <FontAwesomeIcon icon={faStar} />
+                <FaStar/>
                 <p>4.9</p>
               </div>
               <div className="stats chats">
-                <FontAwesomeIcon icon={faComment} />
+                <FaComment/>
                 <p>14</p>
               </div>
               <div className="stats timing">
-                <FontAwesomeIcon icon={faClock} />
+                <FaClock/>
                 <p>3 Meses</p>
               </div>
             </div>

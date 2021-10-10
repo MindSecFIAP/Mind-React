@@ -1,23 +1,25 @@
 import { RegisterUser } from "./RegisterUser"
 
+import {Cadastrar} from "../../styled"
+
 export function RegisterEstagiario(props) {
   return (
     <>
       <RegisterUser
-        crp={<input name="rm" type="number" placeholder="Registro de Matrícula" />}
-        instituicao={<input name="inst" type="number" placeholder="Nome da Instituição de Ensino"/>}
+        crp={<Cadastrar name="rm" type="number" placeholder="Registro de Matrícula" />}
+        instituicao={<Cadastrar name="inst" type="number" placeholder="Nome da Instituição de Ensino"/>}
         cpf={
-          <input name="CPF" type="number" placeholder="CPF (Somente números)" />
+          <Cadastrar name="CPF" type="number" placeholder="CPF (Somente números)" />
         }
         time={
           <div class="column space time">
-            <input type="radio" name="time" id="thirty" value="30"/>
+            <Cadastrar type="radio" name="time" id="thirty" value="30"/>
             <label for="thirty">Conversa de 30min</label>
 
-            <input type="radio" name="time" id="fourtyfive" value="45" />
+            <Cadastrar type="radio" name="time" id="fourtyfive" value="45" />
             <label for="fourtyfive">Conversa de 45min</label>
 
-            <input type="radio" name="time" id="sixty" value="60" />
+            <Cadastrar type="radio" name="time" id="sixty" value="60" />
             <label for="sixty">Conversa de 60min</label>
           </div>
         }
